@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="Membre", uniqueConstraints={@ORM\UniqueConstraint(name="id", columns={"id"})}, indexes={@ORM\Index(name="status", columns={"status"}), @ORM\Index(name="promo", columns={"promo"})})
  * @ORM\Entity
  */
-class Membre
+abstract class Membre
 {
     /**
      * @var string
@@ -82,6 +82,145 @@ class Membre
      * })
      */
     private $promo;
+
+    /**
+     * @return string
+     */
+    public function getNomFam()
+    {
+        return $this->nomFam;
+    }
+
+    /**
+     * @param string $nomFam
+     */
+    public function setNomFam($nomFam)
+    {
+        $this->nomFam = $nomFam;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * @param string $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateNaiss()
+    {
+        return $this->dateNaiss;
+    }
+
+    /**
+     * @param \DateTime $dateNaiss
+     */
+    public function setDateNaiss($dateNaiss)
+    {
+        $this->dateNaiss = $dateNaiss;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTele()
+    {
+        return $this->tele;
+    }
+
+    /**
+     * @param string $tele
+     */
+    public function setTele($tele)
+    {
+        $this->tele = $tele;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param string $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * @param string $password
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param Status $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+
+    /**
+     * @return Promotion
+     */
+    public function getPromo()
+    {
+        return $this->promo;
+    }
+
+    /**
+     * @param Promotion $promo
+     */
+    public function setPromo($promo)
+    {
+        $this->promo = $promo;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    abstract function getInfo();
+
 
 
 }
