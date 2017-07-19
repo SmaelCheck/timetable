@@ -219,7 +219,7 @@ abstract class Membre
         $this->id = $id;
     }
 
-    abstract function getInfo();
+    abstract function getInfo();etr
 
 
 
