@@ -28,6 +28,33 @@ class Creneau
      */
     private $id;
 
+    /**
+     * @return \DateTime
+     */
+    public function getDateCren()
+    {
+        return $this->dateCren;
+    }
+
+    /**
+     * @param \DateTime $dateCren
+     */
+    public function setDateCren($dateCren)
+    {
+        $this->dateCren = $dateCren;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
+
+
 
 }
 

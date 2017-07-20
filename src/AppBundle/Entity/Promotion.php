@@ -38,6 +38,48 @@ class Promotion
      */
     private $dep;
 
+    /**
+     * @return string
+     */
+    public function getLibelle()
+    {
+        return $this->libelle;
+    }
+
+    /**
+     * @param string $libelle
+     */
+    public function setLibelle($libelle)
+    {
+        $this->libelle = $libelle;
+    }
+
+    /**
+     * @return Departement
+     */
+    public function getDep()
+    {
+        return $this->dep;
+    }
+
+    /**
+     * @param Departement $dep
+     */
+    public function setDep($dep)
+    {
+        $this->dep = $dep;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
+
 
 }
 

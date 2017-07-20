@@ -212,14 +212,14 @@ abstract class Membre
     }
 
     /**
-     * @param int $id
+     * @return int
      */
-    public function setId($id)
+    public function getId()
     {
-        $this->id = $id;
+        return $this->id;
     }
 
-    abstract function getInfo();etr
+    abstract function getInfo();
 
 
 

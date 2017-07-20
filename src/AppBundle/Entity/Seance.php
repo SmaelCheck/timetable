@@ -102,6 +102,136 @@ class Seance
      */
     private $prof;
 
+    /**
+     * @return \DateTime
+     */
+    public function getHeureDeb()
+    {
+        return $this->heureDeb;
+    }
+
+    /**
+     * @param \DateTime $heureDeb
+     */
+    public function setHeureDeb($heureDeb)
+    {
+        $this->heureDeb = $heureDeb;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getHeureFin()
+    {
+        return $this->heureFin;
+    }
+
+    /**
+     * @param \DateTime $heureFin
+     */
+    public function setHeureFin($heureFin)
+    {
+        $this->heureFin = $heureFin;
+    }
+
+    /**
+     * @return Groupe
+     */
+    public function getGroupe()
+    {
+        return $this->groupe;
+    }
+
+    /**
+     * @param Groupe $groupe
+     */
+    public function setGroupe($groupe)
+    {
+        $this->groupe = $groupe;
+    }
+
+    /**
+     * @return Creneau
+     */
+    public function getCreneau()
+    {
+        return $this->creneau;
+    }
+
+    /**
+     * @param Creneau $creneau
+     */
+    public function setCreneau($creneau)
+    {
+        $this->creneau = $creneau;
+    }
+
+    /**
+     * @return Salle
+     */
+    public function getSalle()
+    {
+        return $this->salle;
+    }
+
+    /**
+     * @param Salle $salle
+     */
+    public function setSalle($salle)
+    {
+        $this->salle = $salle;
+    }
+
+    /**
+     * @return Matiere
+     */
+    public function getMatiere()
+    {
+        return $this->matiere;
+    }
+
+    /**
+     * @param Matiere $matiere
+     */
+    public function setMatiere($matiere)
+    {
+        $this->matiere = $matiere;
+    }
+
+    /**
+     * @return Promotion
+     */
+    public function getPromo()
+    {
+        return $this->promo;
+    }
+
+    /**
+     * @param Promotion $promo
+     */
+    public function setPromo($promo)
+    {
+        $this->promo = $promo;
+    }
+
+    /**
+     * @return Membre
+     */
+    public function getProf()
+    {
+        return $this->prof;
+    }
+
+    /**
+     * @param Membre $prof
+     */
+    public function setProf($prof)
+    {
+        $this->prof = $prof;
+    }
+
+
+
 
 }
 
